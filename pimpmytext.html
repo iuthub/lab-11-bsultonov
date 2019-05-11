@@ -4,16 +4,37 @@
 		<title>Pimp My Text!</title>
 		<link href="pimpmytext.css" rel="stylesheet" type="text/css" />
 		<!-- link to your script file here -->
+		<script type="text/javascript" src="pimpmytext.js">
+			alert(document.getElementById('button').value); 
+
+		</script>
 
 	</head>
 
 	<body>
 		<h1>Pimp My Text</h1>
 		<div>
-			<img src="geek.jpg" alt="Pimpin' it, geek!" />
+			<img src="geek.jpg" alt="Pimpin' it, geek!"  />
 		</div>
+			<fieldset class="border">
+				<legend>Text</legend>
 
+				<textarea id="inputText" type="text" name="text" cols="30" rows="4" style="resize: none;"></textarea>
+				</fieldset>
+			
+		
+			<fieldset class="border">
+				<legend>Pimpification</legend>
+
+				<button id="button" type="button"> Bigger Pimpin!</button>
+				<br>
+				<label><input id="BlingBtn" type="checkbox" name="checkbox" value="value">Bling</label>
+				</fieldset>
+			
 		<!-- Your UI controls go here -->
 
 	</body>
+	<script type="text/javascript">
+		document.getElementById("BlingBtn") 
+	</script>
 </html>
